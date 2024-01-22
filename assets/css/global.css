@@ -1,0 +1,15 @@
+@import url(reset.css);
+@import url(side_bar.css);
+
+:root {
+    --background-sidebar: #121212;
+    --color-sidebar: #b3b3b3;
+    --sub-background-sidebar: #2a2a2a;
+    --font: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+    font-family: var(--font);
+}
+

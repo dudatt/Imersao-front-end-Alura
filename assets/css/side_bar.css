@@ -1,0 +1,116 @@
+.sidebar {
+    position: fixed; /*vai deixar fixo na página*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+}
+
+.sidebar_navigation, .sadebar_library {
+    margin-top: 6px;
+    border-radius: 8px;
+    /* padding: 16px 0 0 16px; */
+    padding-left: 10px;
+    background: var(--background-sidebar); 
+}
+
+.sidebar_navigation .logo {
+   display: flex;
+   border-radius: 8px;
+   padding: 16px 0 0 16px;
+}
+
+.sidebar_navigation .logo img {
+    width: 80px;
+}
+
+.sidebar nav ul, .sadebar_library a {
+    margin-top: 10px;
+    padding: 0 20px 10px 20px;
+}
+
+.sidebar ul li {
+    padding: 10px 0 ;
+}
+
+.sidebar nav ul li, .sadebar_library a {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sidebar nav ul li a .icon, .sadebar_library a .icon {
+    margin-right: 15px;
+}
+
+.sidebar nav ul li a, .sadebar_library a {
+    text-decoration: none;
+    color: var(--color-sidebar);
+    transition: 0.5s;
+}
+
+.sidebar nav ul li a:hover, .sadebar_library a:hover {
+    color: #ffffff;
+}
+
+.sadebar_library {
+    padding: 10px 0 10px 12px;
+    height: 65%;
+}
+
+.sadebar_library a #plus {
+    margin-left: 113px;
+}
+
+.sadebar_library .u_playlists, 
+.sadebar_library .exp_podcast {
+    background: var(--sub-background-sidebar);
+    padding: 12px 10px 12px 16px;
+    margin: 16px 10px 16px 0 ;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 540;
+}
+
+.sadebar_library .u_playlists h3, 
+.sadebar_library .exp_podcast h3 {
+    font-size: 13px;
+}
+
+.sadebar_library .u_playlists p,
+.sadebar_library .exp_podcast p {
+    font-size: 11px;
+    padding-top: 10px;
+}
+
+.sadebar_library .u_playlists button,
+.sadebar_library .exp_podcast button {
+    margin-top: 14px;
+    border-radius: 22px;
+    background: #ffffff;
+    height: 20px;
+    transition: transform 0.1s ease-in-out; /*pin link to button*/
+}
+
+.sadebar_library .u_playlists button:hover,
+.sadebar_library .exp_podcast button:hover {
+    transform: scale(1.1);
+}
+
+.sadebar_library .u_playlists button a,
+.sadebar_library .exp_podcast button a {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.container_play_pod {
+    height: 140px;
+    overflow-y: scroll;
+}
+
+.container_play_pod::-webkit-scrollbar { /*adjust scrolling*/
+    width: 0;
+}
