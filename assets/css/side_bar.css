@@ -5,93 +5,211 @@
     bottom: 0;
     padding: 10px;
     width: 360px;
+    background-color: #000000;
 }
 
-.sidebar_navigation, .sadebar_library {
-    margin-top: 6px;
+.sidebar .logo {
+    background-color: var(--background-sidebar);
+    display: flex;
     border-radius: 8px;
-    /* padding: 16px 0 0 16px; */
-    padding-left: 10px;
-    background: var(--background-sidebar); 
+    padding: 16px 0 0 16px;
 }
 
-.sidebar_navigation .logo {
-   display: flex;
-   border-radius: 8px;
-   padding: 16px 0 0 16px;
-}
-
-.sidebar_navigation .logo img {
+.sidebar .logo img {
     width: 80px;
 }
 
-.sidebar nav ul, .sadebar_library a {
+.sidebar_navigation {
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--background-sidebar); 
+}
+
+.sidebar nav ul {
     margin-top: 10px;
     padding: 0 20px 20px 20px;
 }
 
-.sidebar ul li {
+.sidebar nav ul li {
     padding: 15px 0 ;
 }
 
-.sidebar nav ul li, .sadebar_library a {
+.sidebar nav ul li {
     font-weight: 600;
     font-size: 16px;
 }
 
-.sidebar nav ul li a .icon, .sadebar_library a .icon {
-    margin-right: 15px;
-}
-
-.sidebar nav ul li a, .sadebar_library a {
+.sidebar nav ul li a {
     text-decoration: none;
     color: var(--color-sidebar);
     transition: 0.5s;
+    font-weight: 600;
+    font-size: 14px;
 }
 
-.sidebar nav ul li a:hover, .sadebar_library a:hover {
+.sidebar nav ul li a .fa {
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.sidebar nav ul li a:hover {
     color: #ffffff;
 }
 
 .sadebar_library {
-    padding: 20px 0 30px 12px;
-    margin-top: 15px;
-    height: 55%;
-}
-
-.sadebar_library #plus {
-    margin-left: 110px;
-}
-
-.sadebar_library .u_playlists, 
-.sadebar_library .exp_podcast {
-    background: var(--sub-background-sidebar);
-    padding: 12px 16px 12px 16px;
-    margin: 30px 10px 16px 0 ;
+    background-color: var(--background-sidebar);
     border-radius: 8px;
-    color: #ffffff;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 540;
-}
-
-.sadebar_library .u_playlists h3, 
-.sadebar_library .exp_podcast h3 {
-    font-size: 15px;
-}
-
-.sadebar_library .u_playlists p,
-.sadebar_library .exp_podcast p {
+    display: flex;
+    justify-content: space-between; /*pesquisar depois*/
+    flex-direction: column; /*sao 3 colunas: icon, texto, e o +*/
+    padding: 4px 8px;
+    color: var(--color-sidebar);
+    font-weight: 600;
     font-size: 14px;
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
-.sadebar_library .u_playlists button,
+.sadebar_library .container_library {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sadebar_library .container_library .library_button {
+    display: flex;
+    margin-right: 10px;
+    color: var(--color-sidebar);
+    background-color: transparent;
+    border: 0;
+    font-size: 14px; /*14px ≃ 1rem (rem tem a ver com responsividade)*/
+    font-weight: 700;
+    font-family: var(--font); 
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+    transition: 0.4s;
+}
+
+.sadebar_library .container_library .library_button:hover {
+    color: #ffffff;
+}
+
+.sadebar_library .library_button .fa-book {
+    font-size: 20px;
+    margin-right: 10px;
+    padding-right: 8px;
+}
+
+.sadebar_library .container_library .fa-plus {
+    margin: 24px 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sadebar_library .container_library .fa-plus:hover { /*fixar botão*/
+    background-color: var(--sub-background-sidebar);
+    border: 8px solid var(--sub-background-sidebar);
+    border-radius: 100%;
+    color: #ffffff;
+}
+
+.section-playlist {
+    background-color: #242424;
+    display: flex;
+    align-items: flex-start; /*o conteudo vai ficar no canto superior esquerdo*/
+    justify-content: space-between;
+    gap:20px; /*só com display:flex*/
+    color: var(--color-sidebar);
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+
+.section-playlist .section-playlist-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist-content .text {
+    padding-bottom: 14px;
+    color: #ffffff;
+}
+
+.section-playlist-content .title {
+    font-weight: 700;
+}
+
+.section-playlist-content .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.section-playlist-content .section-playlist-button {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: var(--font);
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    border: 0;
+    width: 113px;
+    margin-top: 12px;
+    transition: 0.1s;
+}
+
+.section-playlist-content .section-playlist-button:hover {
+    transform: scale(1.1);
+}
+
+.sidebar .cookies{
+    margin: 25px 20px;
+}
+
+.sidebar .cookies a {
+    color: var(--color-sidebar);
+    font-weight: 500;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.sidebar .cookies a:hover { /*pseudo-classes mudam o estado do elemento*/
+    text-decoration: underline;
+}
+
+.languages .languages_button{
+    background-color: transparent;
+    border: 1px solid #878787;
+    color: #ffffff;
+    cursor: pointer;
+    align-items: center;
+    font-weight: bold;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+.languages .languages_button:hover {
+    transform: scale(1.1);
+    border-color: #ffffff;
+}
+
+/*.sadebar_library .u_playlists button,
 .sadebar_library .exp_podcast button {
     margin-top: 14px;
     border-radius: 24px;
     background: #ffffff;
     height: 28px;
-    transition: transform 0.1s ease-in-out; /*pin link to button*/
+    transition: transform 0.1s ease-in-out; 
 }
 
 .sadebar_library .u_playlists button:hover,
@@ -116,10 +234,10 @@
 
 .container_play_pod {
     height: 180px;
-    overflow-y: scroll; /*colocar shadow*/
+    overflow-y: scroll; 
     padding-top: 20px;
 }
 
-.container_play_pod::-webkit-scrollbar { /*adjust scrolling*/
+.container_play_pod::-webkit-scrollbar { 
     width: 0;
-}
+} */
