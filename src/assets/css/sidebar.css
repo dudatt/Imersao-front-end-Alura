@@ -41,7 +41,7 @@
 
 .sidebar nav ul li a {
     text-decoration: none;
-    color: var(--color-sidebar);
+    color: var(--color-font-sidebar);
     transition: 0.5s;
     font-weight: 600;
     font-size: 14px;
@@ -64,7 +64,7 @@
     justify-content: space-between; /*pesquisar depois*/
     flex-direction: column; /*sao 3 colunas: icon, texto, e o +*/
     padding: 4px 8px;
-    color: var(--color-sidebar);
+    color: var(--color-font-sidebar);
     font-weight: 600;
     font-size: 14px;
     margin-top: 10px;
@@ -78,12 +78,11 @@
 .sadebar_library .container_library .library_button {
     display: flex;
     margin-right: 10px;
-    color: var(--color-sidebar);
+    color: var(--color-font-sidebar);
     background-color: transparent;
     border: 0;
     font-size: 14px; /*14px ≃ 1rem (rem tem a ver com responsividade)*/
     font-weight: 700;
-    font-family: var(--font); 
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -108,19 +107,19 @@
 }
 
 .sadebar_library .container_library .fa-plus:hover { /*fixar botão*/
-    background-color: var(--sub-background-sidebar);
-    border: 8px solid var(--sub-background-sidebar);
+    background-color: var(--background-content-sidebar);
+    border: 8px solid var(--background-content-sidebar);
     border-radius: 100%;
     color: #ffffff;
 }
 
 .section-playlist {
-    background-color: #242424;
+    background-color: var(--background-section);
     display: flex;
     align-items: flex-start; /*o conteudo vai ficar no canto superior esquerdo*/
     justify-content: space-between;
     gap:20px; /*só com display:flex*/
-    color: var(--color-sidebar);
+    color: var(--color-font-sidebar);
     font-weight: 600;
     font-size: 14px;
     margin: 8px 0;
@@ -155,7 +154,6 @@
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: var(--font);
     text-decoration: none;
     text-transform: none;
     padding: 10px;
@@ -174,7 +172,7 @@
 }
 
 .sidebar .cookies a {
-    color: var(--color-sidebar);
+    color: var(--color-font-sidebar);
     font-weight: 500;
     font-size: 10px;
     text-decoration: none;
@@ -186,7 +184,7 @@
 
 .languages .languages_button{
     background-color: transparent;
-    border: 1px solid #878787;
+    border: 1px solid var(--color-border-button);
     color: #ffffff;
     cursor: pointer;
     align-items: center;
@@ -202,42 +200,3 @@
     transform: scale(1.1);
     border-color: #ffffff;
 }
-
-/*.sadebar_library .u_playlists button,
-.sadebar_library .exp_podcast button {
-    margin-top: 14px;
-    border-radius: 24px;
-    background: #ffffff;
-    height: 28px;
-    transition: transform 0.1s ease-in-out; 
-}
-
-.sadebar_library .u_playlists button:hover,
-.sadebar_library .exp_podcast button:hover {
-    transform: scale(1.1);
-}
-
-.sadebar_library .u_playlists button a,
-.sadebar_library .exp_podcast button a {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 7px;
-}
-
-.container_library {
-    position: fixed;
-    background: var(--background-sidebar);
-    width: 340px;
-    height: 40px;
-}
-
-.container_play_pod {
-    height: 180px;
-    overflow-y: scroll; 
-    padding-top: 20px;
-}
-
-.container_play_pod::-webkit-scrollbar { 
-    width: 0;
-} */

@@ -1,0 +1,18 @@
+@import url(reset.css);
+@import url(sidebar.css);
+@import url(main.css);
+
+:root {
+    --background-sidebar: #121212;
+    --background-section: #242424;
+    --color-border-button: #878787;
+    --color-font-sidebar: #b3b3b3;
+    --color-arrow: #131313;
+    --background-arrow: rgba(0, 0, 0, 0.7);
+    --font-dm-sans: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+    font-family: var(--font-dm-sans);
+}
