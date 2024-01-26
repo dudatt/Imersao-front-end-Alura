@@ -1,0 +1,5 @@
+.main_content {
+    background-color: var(--background-sidebar);
+    display: flex;
+    justify-content: space-between;
+}
