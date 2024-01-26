@@ -42,7 +42,7 @@
 .sidebar nav ul li a {
     text-decoration: none;
     color: var(--color-font-sidebar);
-    transition: 0.5s;
+    transition: 0.4s;
     font-weight: 600;
     font-size: 14px;
 }
@@ -106,10 +106,7 @@
     transition: 0.2s;
 }
 
-.sadebar_library .container_library .fa-plus:hover { /*fixar botão*/
-    background-color: var(--background-content-sidebar);
-    border: 8px solid var(--background-content-sidebar);
-    border-radius: 100%;
+.sadebar_library .container_library .fa-plus:hover {
     color: #ffffff;
 }
 
@@ -164,11 +161,11 @@
 }
 
 .section-playlist-content .section-playlist-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .sidebar .cookies{
-    margin: 25px 20px;
+    margin: 80px 20px;
 }
 
 .sidebar .cookies a {
@@ -197,6 +194,6 @@
 }
 
 .languages .languages_button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     border-color: #ffffff;
 }

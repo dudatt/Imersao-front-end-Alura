@@ -1,6 +1,8 @@
 @import url(reset.css);
-@import url(sidebar.css);
-@import url(main.css);
+@import url(side_bar.css);
+@import url(main_header.css);
+@import url(main_content.css);
+@import url(footer.css);
 
 :root {
     --background-sidebar: #121212;
@@ -10,6 +12,7 @@
     --color-arrow: #131313;
     --background-arrow: rgba(0, 0, 0, 0.7);
     --font-dm-sans: "DM Sans", sans-serif;
+    --background-footer: linear-gradient(to right,#C04C9C, #7B67CA, #5F88E5,#519BF5, #B5DFFF);
 }
 
 body {
