@@ -1,5 +1,131 @@
 .main_content {
-    background-color: var(--background-sidebar);
+    background-color: var(--background-section);
+    max-width: 80vw;
+    margin: 0 10px 10px ;
+    height: 65vh;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+.main_content .line_01 {
+    display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  gap: 16px;
+  margin-bottom: 16px; 
+}
+
+.main_content .line_01 .header_line_01 h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.main_content .line_01 .header_line_01 a {
+    text-decoration: none;
+    font-size: 20px;
     display: flex;
-    justify-content: space-between;
+    color: #fff;
+    font-weight: 700;
+}
+
+.main_content .line_01 .header_line_01 #show-all {
+    font-size: 16px;
+    flex-direction: row-reverse;
+    color: var( --color-font-sidebar);
+    
+}
+
+.offer_scroll_container {
+    max-width: 43vh;
+    margin: 24px;
+    overflow-y: auto;
+}
+
+.offer_scroll_container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.offer_scroll_container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* .offer_list-item {
+    display: grid;
+    gap: 16px;
+    margin: 0 auto;
+} */
+
+.offer_list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 107px;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+.cards {
+    position: relative;
+    width: 220px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.cards span {
+    padding: 16px;
+    position: absolute;
+    color: var(--color-font-sidebar);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card01 {
+    background-color: rgb(0, 100, 80);
+}
+.card02 {
+background-color: rgb(132, 0, 231);
+}
+.card03 {
+background: rgb(30, 50, 100);
+}
+.card04 {
+background: rgb(140, 25, 50);
+}
+.card05 {
+background: rgb(232, 17, 91);
+}
+.card06 {
+background: rgb(83, 122, 161);
+}
+.card07 {
+background: rgb(142, 102, 172);
+}
+.card08 {
+background: rgb(20, 138, 8);
+}
+.card09 {
+background: rgb(30, 50, 100);
+}
+.card10 {
+background: rgb(233, 20, 41);
+}
+.card11 {
+background: rgb(80, 55, 80);
+}
+.card12 {
+background: rgb(216, 64, 0);
+}
+.card13 {
+background: rgb(186, 93, 7);
+}
+.card14 {
+background: rgb(0, 30, 80);
+}
+.card15 {
+background: rgb(60, 30, 80);
 }
