@@ -57,16 +57,27 @@
     color: #ffffff;
 }
 
+.offer_scroll_library {
+    max-height: 36vh;
+    margin: 9px;
+    overflow-y: auto;
+}
+
+.offer_scroll_library::-webkit-scrollbar {
+    width: 1px;
+}
+
+.offer_scroll_library::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
 .sadebar_library {
     background-color: var(--background-sidebar);
-    border-radius: 8px;
+    border-radius: 8px; 
     display: flex;
     justify-content: space-between; /*pesquisar depois*/
     flex-direction: column; /*sao 3 colunas: icon, texto, e o +*/
     padding: 4px 8px;
     color: var(--color-font-sidebar);
-    font-weight: 600;
-    font-size: 14px;
     margin-top: 10px;
 }
 
@@ -81,7 +92,7 @@
     color: var(--color-font-sidebar);
     background-color: transparent;
     border: 0;
-    font-size: 14px; /*14px ≃ 1rem (rem tem a ver com responsividade)*/
+    font-size: 14px;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
@@ -111,22 +122,38 @@
 }
 
 .section-playlist {
-    background-color: var(--background-section);
     display: flex;
     align-items: flex-start; /*o conteudo vai ficar no canto superior esquerdo*/
-    justify-content: space-between;
-    gap:20px; /*só com display:flex*/
+    justify-content:center;
+    /*gap:20px; /*só com display:flex*/
     color: var(--color-font-sidebar);
     font-weight: 600;
     font-size: 14px;
     margin: 8px 0;
-    padding: 16px 20px;
     border-radius: 10px;
 }
 
 .section-playlist .section-playlist-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 90px;
+    overflow: hidden;
+    background-color: var(--background-section);
+    margin-bottom: 20px;
+    padding: 30px;
+    
+}
+
+.card .card-content {
     display: flex;
     flex-direction: column;
+    
 }
 
 .section-playlist-content .text {
@@ -136,11 +163,12 @@
 
 .section-playlist-content .title {
     font-weight: 700;
+    font-size: 16px;
 }
 
 .section-playlist-content .subtitle {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .section-playlist-content .section-playlist-button {
@@ -148,15 +176,14 @@
     justify-content: center;
     background-color: #ffffff;
     color: #000000;
-    border-radius: 20px;
-    font-size: 12px;
+    border-radius: 25px;
+    font-size: 14px;
     font-weight: 700;
     text-decoration: none;
     text-transform: none;
     padding: 10px;
     border: 0;
-    width: 113px;
-    margin-top: 12px;
+    width: 140px;
     transition: 0.1s;
 }
 
@@ -165,7 +192,7 @@
 }
 
 .sidebar .cookies{
-    margin: 80px 20px;
+    margin: 10px 20px;
 }
 
 .sidebar .cookies a {
