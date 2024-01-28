@@ -1,3 +1,14 @@
+const time = document.getElementById('greeting');
+const currentHour = new Date().getHours();
+
+if (currentHour >= 5 && currentHour < 12) {
+    time.textContent = "Good Morning!";
+} else if (currentHour >= 12 && currentHour < 18) {
+    time.textContent = "Good Afternoon!";
+} else {
+    time.textContent = "Good Evening!";
+}
+
 const resultArtists = document.getElementById('result-artist');
 const resultPlaylist = document.getElementById('result-playlists');
 const searchInput = document.getElementById('search-input');
