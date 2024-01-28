@@ -3,6 +3,7 @@
 @import url(main_header.css);
 @import url(main_content.css);
 @import url(footer.css);
+@import url(media-queries.css);
 
 :root {
     --background-sidebar: #121212;
