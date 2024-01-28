@@ -7,20 +7,37 @@
 }
 
 .playlist {
-    margin: 24px;
+    margin: 12px 40px; 
 }
 
 .playlist #greeting {
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 700;
-    color: var( --color-font-sidebar);
-    margin-bottom: 48px;
+    color: #fff;
+    margin-bottom: 30px;
+    cursor: default;
 }
 
 .playlist #session {
-    color: var(--color-font-sidebar);
+    color: #fff;
     font-size: 24px;
     font-weight: 700;
+    text-decoration: none;
+}
+
+.playlist #session:hover {
+    text-decoration:underline;
+}
+
+.playlist #show-all {
+    margin-left: 93vh;
+    text-decoration: none;
+    color: var(--color-font-sidebar);
+    font-weight: 700;
+}
+
+.playlist #show-all:hover {
+    text-decoration: underline;
 }
 
 .offer_scroll_container {
