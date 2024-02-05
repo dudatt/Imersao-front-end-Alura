@@ -83,7 +83,7 @@
 .cards span {
     padding: 16px;
     position: absolute;
-    color: var(--color-font-sidebar);
+    color:#fff;
     font-size: 24px;
     font-weight: 700;
 }
